@@ -12,18 +12,21 @@ import './index.css'
 function Home() {
     const navigate = useNavigate(); //
     const list = [
-        {id: 1, name: '第一课', content: '加载地球'},
-        {id: 2, name: '商品2'},
-        {id: 3, name: '商品3'}
+        {id: 1, name: '第1课', content: 'Lesson1,项目运行环境的搭建以及基本配置说明'},
+        {id: 2, name: '第2课', content: 'Lesson2,'},
+        {id: 3, name: '第3课', content: 'Lesson3,'}
     ]
     const handleClick = (item) => {
         console.log(item)
         switch (item.id) {
             case 1:
-                navigate("/page1");
+                navigate("/lesson1");
                 break;
             case 2:
-                navigate("/page2");
+                navigate("/lesson2");
+                break;
+            case 3:
+                navigate("/lesson3");
                 break;
             default:
                 break;

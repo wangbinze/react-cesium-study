@@ -1,7 +1,9 @@
 // import Home from '@/views/Catalogue/Home';
 import {lazy, Suspense} from 'react';
 import Home from "../views/Home";
-import Page1 from "../views/Lesson1";
+import Lesson1 from "../views/Lesson1";
+import Lesson2 from "../views/Lesson2";
+
 // import ViewLoading from '@/components/ViewLoading';
 // import ViewLoading from "@/components/ViewLoading";
 
@@ -11,7 +13,11 @@ export default [
         element: <Home/>
     },
     {
-        path: '/page1',
-        element: <Page1/>
+        path: '/lesson1',
+        element: <Lesson1/>
+    },
+    {
+        path: '/lesson2',
+        element: <Lesson2/>
     }
 ]

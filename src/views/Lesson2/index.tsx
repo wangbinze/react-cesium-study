@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from "react";
 import * as Cesium from "cesium";
-function Lesson1() {
+function Lesson2() {
     const csmViewerRef = useRef<null | Cesium.Viewer>(null);
     const viewerContainerRef = useRef(null);
 
@@ -75,4 +75,4 @@ function Lesson1() {
     )
 }
 
-export default Lesson1;
+export default Lesson2;
