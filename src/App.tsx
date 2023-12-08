@@ -12,6 +12,7 @@ import {
   RouterProvider
 } from 'react-router-dom';
 import './App.css';
+import './views/css/module.css'
 import routers from './router/index';
 // import 'cesium/Build/Cesium/Widgets/widgets.css';
 

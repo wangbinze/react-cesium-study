@@ -1,7 +1,7 @@
 // import Home from '@/views/Catalogue/Home';
 import {lazy, Suspense} from 'react';
 import Home from "../views/Home";
-import Page1 from "../views/Page1";
+import Page1 from "../views/Lesson1";
 // import ViewLoading from '@/components/ViewLoading';
 // import ViewLoading from "@/components/ViewLoading";
 
