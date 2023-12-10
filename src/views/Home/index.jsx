@@ -14,7 +14,11 @@ function Home() {
     const list = [
         {id: 1, name: '第1课', content: 'Lesson1,项目运行环境的搭建以及基本配置说明'},
         {id: 2, name: '第2课', content: 'Lesson2,地图和地形修改'},
-        {id: 3, name: '第3课', content: 'Lesson3,绘制形状,Entity'}
+        {id: 3, name: '第3课', content: 'Lesson3,绘制形状,Entity'},
+        {id: 4, name: '第4课', content: 'Lesson4,'},
+        {id: 5, name: '第5课', content: 'Lesson5,'},
+        {id: 6, name: '第6课', content: 'Lesson6,'},
+        {id: 7, name: '第7课', content: 'Lesson7,'},
     ]
     const handleClick = (item) => {
         console.log(item)

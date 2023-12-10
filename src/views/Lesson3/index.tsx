@@ -33,6 +33,19 @@ function Lesson3() {
      * 实体的属性可以动态更新，例如位置、旋转、缩放、颜色、纹理、边界等
      *
      */
+    /**
+     * box  矩形
+     * ellipses  椭圆
+     * corridor  走廊
+     * cylinder  圆柱体
+     * polygon  多边形
+     * polyline  折线
+     * polylineVolume  折线体
+     * rectangle  矩形
+     * ellipsoid  椭球体
+     * wall  实体墙
+     * https://cesium.com/learn/cesiumjs-learn/cesiumjs-creating-entities/
+     */
     const drawGraph = () => {
         /**
          * 绘制一个点
