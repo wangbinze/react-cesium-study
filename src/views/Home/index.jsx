@@ -14,7 +14,7 @@ function Home() {
     const list = [
         {id: 1, name: '第1课', content: 'Lesson1,项目运行环境的搭建以及基本配置说明'},
         {id: 2, name: '第2课', content: 'Lesson2,地图和地形修改'},
-        {id: 3, name: '第3课', content: 'Lesson3,绘制形状,Entity'},
+        {id: 3, name: '第3课', content: 'Lesson3,绘制实体,Entity'},
         {id: 4, name: '第4课', content: 'Lesson4,绘制会动的线段,Polyline'},
         {id: 5, name: '第5课', content: 'Lesson5,添加模型,Model，3d titles'},
         {id: 6, name: '第6课', content: 'Lesson6,'},
