@@ -1,5 +1,5 @@
 
 /*用于隐藏左下角 cesium 的logo  和相关信息*/
 .cesium-viewer-bottom {
-    display: none !important;
+    /*display: none !important;*/
 }

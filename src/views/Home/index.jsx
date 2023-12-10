@@ -13,8 +13,8 @@ function Home() {
     const navigate = useNavigate(); //
     const list = [
         {id: 1, name: '第1课', content: 'Lesson1,项目运行环境的搭建以及基本配置说明'},
-        {id: 2, name: '第2课', content: 'Lesson2,'},
-        {id: 3, name: '第3课', content: 'Lesson3,'}
+        {id: 2, name: '第2课', content: 'Lesson2,地图和地形修改'},
+        {id: 3, name: '第3课', content: 'Lesson3,绘制形状,Entity'}
     ]
     const handleClick = (item) => {
         console.log(item)
