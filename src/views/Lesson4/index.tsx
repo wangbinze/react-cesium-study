@@ -3,7 +3,7 @@ import * as Cesium from "cesium";
 
 function Lesson4() {
     const csmViewerRef = useRef<null | Cesium.Viewer>(null);
-
+    const isConstant = false;
     // 中国的坐标
     const chinaPosition = {
         longitude: 116.395645038,
@@ -25,11 +25,60 @@ function Lesson4() {
 
     /**
      * 绘制线，随着时间变化
+     * 坐标点数据，根据时间变化而变化
+     * 参考：
+     *  https://sandcastle.cesium.com/?src=HeadingPitchRoll.html&label=All
+     *  https://sandcastle.cesium.com/?src=Callback%20Property.html&label=All
+     *
      */
+    /**
+     * 方法1：使用CallbackProperty    new Cesium.CallbackProperty(callback, isConstant)
+     *  - 回调函数，延迟计算
+     *  - callback：计算属性时要调用的函数。
+     *  - isConstant：true 当回调函数每次都返回相同的值时， false 如果该值会发生变化。
+     *  -
+     */
+        // let options = Cesium.Cartesian3.fromDegreesArray([chinaPosition.longitude, chinaPosition.latitude, chinaPosition.height, chinaPosition.longitude + 1, chinaPosition.latitude + 1, chinaPosition.height + 1])
+    let endLongitude;
+    const startTime = Cesium.JulianDate.now();
     const drawGraph = () => {
         console.log("drawGraph");
+        const readLine = csmViewerRef.current?.entities.add({
+            name: "readLine",
+            polyline: {
+                // 线的颜色
+                material: Cesium.Color.YELLOW,
+                // 线的宽度
+                width: 10,
+                // 线的类型
+                // 参考：https://cesiumjs.org/Cesium/Build/Documentation/PolylineMaterialAppearance.html
+                // 线的材质
+                // 参考：https://cesiumjs.org/Cesium/Build/Documentation/PolylineDashMaterialProperty.html
+                // 线的虚线
+                positions: new Cesium.CallbackProperty(function (time: any, result) {
+                    endLongitude =
+                        chinaPosition.longitude +
+                        0.001 * Cesium.JulianDate.secondsDifference(time, startTime);
+                    return Cesium.Cartesian3.fromDegreesArray(
+                        [chinaPosition.longitude, chinaPosition.latitude, endLongitude, chinaPosition.latitude],
+                        Cesium.Ellipsoid.WGS84,
+                        result
+                    );
+                }, isConstant)
+            }
+        });
+        // csmViewerRef.current?.zoomTo(readLine)
     }
-
+    useEffect(() => {
+        const timer = setInterval(() => {
+            if (csmViewerRef.current) {
+                drawGraph();
+            }
+        }, 10000);
+        return () => {
+            clearInterval(timer);
+        }
+    }, []);
     useEffect(() => {
         if (!csmViewerRef.current) {
 
@@ -43,7 +92,7 @@ function Lesson4() {
             });
 
             defaultCameraPosition();
-            drawGraph();
+            // drawGraph();
         }
 
         // 退出当前页面时，销毁
