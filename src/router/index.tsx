@@ -5,6 +5,7 @@ import Lesson1 from "../views/Lesson1";
 import Lesson2 from "../views/Lesson2";
 import Lesson3 from "../views/Lesson3";
 import Lesson4 from "../views/Lesson4";
+import Lesson5 from "../views/Lesson5";
 
 // import ViewLoading from '@/components/ViewLoading';
 // import ViewLoading from "@/components/ViewLoading";
@@ -29,5 +30,9 @@ export default [
     {
         path: '/lesson4',
         element: <Lesson4/>
-    }
+    },
+    {
+        path: '/lesson5',
+        element: <Lesson5/>
+    },
 ]

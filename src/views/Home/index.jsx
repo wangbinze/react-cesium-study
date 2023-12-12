@@ -35,6 +35,9 @@ function Home() {
             case 4:
                 navigate("/lesson4");
                 break;
+            case 5:
+                navigate("/lesson5");
+                break;
             default:
                 break;
         }
