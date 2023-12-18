@@ -22,7 +22,7 @@ function Home() {
         {id: 8, name: '第8课', content: 'Lesson8,迁徙图，飞行线'},
         {id: 9, name: '第9课', content: 'Lesson9,热力图'},
         {id: 10, name: '第10课', content: 'Lesson10,剖面'},
-        {id: 11, name: '第11课', content: 'Lesson11,剖面'},
+        {id: 11, name: '第11课', content: 'Lesson11,插值：平滑路径'},
     ]
     const handleClick = (item) => {
         switch (item.id) {
