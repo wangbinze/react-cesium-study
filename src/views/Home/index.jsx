@@ -17,11 +17,14 @@ function Home() {
         {id: 3, name: '第3课', content: 'Lesson3,绘制实体,Entity'},
         {id: 4, name: '第4课', content: 'Lesson4,绘制会动的线段,Polyline'},
         {id: 5, name: '第5课', content: 'Lesson5,添加模型,Model，3d titles'},
-        {id: 6, name: '第6课', content: 'Lesson6,'},
-        {id: 7, name: '第7课', content: 'Lesson7,'},
+        {id: 6, name: '第6课', content: 'Lesson6,相机控制,camera'},
+        {id: 7, name: '第7课', content: 'Lesson7,polyline弧段类型'},
+        {id: 8, name: '第8课', content: 'Lesson8,迁徙图，飞行线'},
+        {id: 9, name: '第9课', content: 'Lesson9,热力图'},
+        {id: 10, name: '第10课', content: 'Lesson10,剖面'},
+        {id: 11, name: '第11课', content: 'Lesson11,剖面'},
     ]
     const handleClick = (item) => {
-        console.log(item)
         switch (item.id) {
             case 1:
                 navigate("/lesson1");
@@ -37,6 +40,24 @@ function Home() {
                 break;
             case 5:
                 navigate("/lesson5");
+                break;
+            case 6:
+                navigate("/lesson6");
+                break;
+            case 7:
+                navigate("/lesson7");
+                break;
+            case 8:
+                navigate("/lesson8");
+                break;
+            case 9:
+                navigate("/lesson9");
+                break;
+            case 10:
+                navigate("/lesson10");
+                break;
+            case 11:
+                navigate("/lesson11");
                 break;
             default:
                 break;
