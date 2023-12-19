@@ -10,6 +10,7 @@ import Lesson8 from "../views/Lesson8";
 import Lesson9 from "../views/Lesson9";
 import Lesson10 from "../views/Lesson10";
 import Lesson11 from "../views/Lesson11";
+import Lesson12 from "../views/Lesson12";
 
 export default [
     {
@@ -59,5 +60,9 @@ export default [
     {
         path: '/lesson11',
         element: <Lesson11/>
+    },
+    {
+        path: '/lesson12',
+        element: <Lesson12/>
     }
 ]

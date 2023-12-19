@@ -23,6 +23,7 @@ function Home() {
         {id: 9, name: '第9课', content: 'Lesson9,热力图'},
         {id: 10, name: '第10课', content: 'Lesson10,剖面'},
         {id: 11, name: '第11课', content: 'Lesson11,插值：平滑路径'},
+        {id: 12, name: '第12课', content: 'Lesson12,粒子效果'},
     ]
     const handleClick = (item) => {
         switch (item.id) {
@@ -58,6 +59,9 @@ function Home() {
                 break;
             case 11:
                 navigate("/lesson11");
+                break;
+            case 12:
+                navigate("/lesson12");
                 break;
             default:
                 break;
