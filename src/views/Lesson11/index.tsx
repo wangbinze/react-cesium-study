@@ -18,7 +18,7 @@ function Lesson11() {
         });
     }
     /**
-     * 插值划线
+     * 插值画线
      */
     const drawPolyline = () => {
         console.log('drawPolyline')
@@ -33,7 +33,14 @@ function Lesson11() {
             Cesium.Cartesian3.fromDegrees(114, 10),
             Cesium.Cartesian3.fromDegrees(113, 8)
         ];
-
+        viewer.entities.add({
+            name: 'CatmullRomSpline',
+            polyline: {
+                positions: controls,
+                width: 1,
+                material: Cesium.Color.RED
+            }
+        });
         for (let i = 0; i < controls.length; i++) {
             viewer.entities.add({
                 position: controls[i],
@@ -46,16 +53,29 @@ function Lesson11() {
         viewer.zoomTo(viewer.entities);
 
         // CatmullRomSpline
+        /**
+         * 样条曲线是一种三次样条曲线，其中控制点处的切线（第一个和最后一个除外）使用前一个和下一个控制点进行计算。
+         */
         let spline1 = new Cesium.CatmullRomSpline({
+            // 制点的 Cartesian3 数组。 points.length 必须大于或等于 2。
             points: controls,
+            // 每个点处严格递增的无单位浮点时间数组。这些值与时钟时间无关。它们是曲线的参数化。times.length 必须等于 points.length。
+            // 使用相对时间，例如 0 到 1
+            // 表示线段的起点在时间轴上的位置为 0，终点在时间轴上的位置为 1。通过这种方式，你可以保持线段在时间上的一致长度。
             times: [0.0, 0.25, 0.5, 0.75, 1],
+            /**
+             * firstTangent 	可选曲线在第一个控制点的切线。如果没有给出切线，则将进行估计。
+             * lastTangent      可选，曲线在最后一个控制点的切线。如果没有给出切线，则将进行估计。
+             */
         });
         console.log(spline1, 'spline1');
 
+        // 循环算出所有的点
         let positions1 = [];
         for (let i = 0; i <= 100; i++) {
             let cartesian3 = spline1.evaluate(i / 100);
             positions1.push(cartesian3);
+            // 添加每个点，其实是可以不添加的，但是为了方便观察，添加了
             viewer.entities.add({
                 position: cartesian3,
                 point: {
@@ -65,6 +85,7 @@ function Lesson11() {
             });
         }
 
+        // 添加曲线，将所有点添加到一个 polyline 中
         viewer.entities.add({
             name: 'CatmullRomSpline',
             polyline: {
@@ -76,7 +97,9 @@ function Lesson11() {
 
         // HermiteSpline
         let spline2 = Cesium.HermiteSpline.createNaturalCubic({
+            // 每个点处严格递增的无单位浮点时间数组。这些值与时钟时间无关。它们是曲线的参数化。
             times: [0.0, 0.25, 0.5, 0.75, 1],
+            // times: [0.0, 0.25],
             points: controls
         });
         let positions2: Cesium.Cartesian3[] = [];
@@ -103,6 +126,7 @@ function Lesson11() {
         // LinearSpline
         let spline3 = new Cesium.LinearSpline({
             times: [0.0, 0.25, 0.5, 0.75, 1],
+            // times: [0.0, 0.25],
             points: controls
         });
 
