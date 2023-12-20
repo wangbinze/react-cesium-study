@@ -2,8 +2,9 @@ import React, {useEffect, useRef, useState} from "react";
 import * as Cesium from "cesium";
 
 
-function Lesson12() {
+function Lesson13() {
     let viewer: Cesium.Viewer | null = null;
+    // 粒子相关信息
     const [viewModel, setViewModel] = useState({
         emissionRate: 5.0,
         gravity: 0.0,
@@ -50,8 +51,21 @@ function Lesson12() {
         });
         viewer.flyTo(entityCar);
 
-
+        const particleSystem = viewer.scene.primitives.add(
+            new Cesium.ParticleSystem({
+                image: '/static/image/smoke.png',
+                startColor: new Cesium.Color(0.0, 0.0, 1.0, 0.7),
+                endColor: new Cesium.Color(1.0, 0.0, 0.0, 0.7),
+                startScale: viewModel.startScale,
+                // emitterModelMatrix: computeEmitterModelMatrix()
+            })
+        )
     }
+    const computeEmitterModelMatrix = () => {
+
+        // return Cesium.Matrix4.fromTranslationRotationScale(trs, emitterModelMatrix);
+    }
+
     useEffect(() => {
         Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIzZmRjY2ZkNC00M2I5LTQwMDktODA0ZS01NmY5ODBkYmUzOGMiLCJpZCI6NjM0OCwiaWF0IjoxNzAxODI3ODI3fQ.ukQm5Q1hF9UFwOJNnw_R6otKl7tQbwX13EkE2hSEEZI";
         csmViewerRef.current = new Cesium.Viewer("csm-viewer-container", {
@@ -80,4 +94,4 @@ function Lesson12() {
     )
 }
 
-export default Lesson12;
+export default Lesson13;

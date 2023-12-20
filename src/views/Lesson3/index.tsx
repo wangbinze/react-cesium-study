@@ -44,9 +44,14 @@ function Lesson3() {
      * rectangle  矩形
      * ellipsoid  椭球体
      * wall  实体墙
+     * plane  平面
      * https://cesium.com/learn/cesiumjs-learn/cesiumjs-creating-entities/
+     * https://cesium.com/learn/cesiumjs/ref-doc/Entity.html?classFilter=entity
      */
     const drawGraph = () => {
+        if (!csmViewerRef.current) {
+            return;
+        }
         /**
          * 绘制一个点
          * 绘制的点，会正对屏幕（相机），在旋转地球时，可能会存在有部分会被地球所遮挡
@@ -104,6 +109,34 @@ function Lesson3() {
                 material: Cesium.Color.RED.withAlpha(0.5),
             },
         })
+
+        // 定义垂直于地球的平面的顶点
+        const positions = Cesium.Cartesian3.fromDegreesArrayHeights([
+            -90.0, 41.0, 0.0,
+            -85.0, 41.0, 500000.0,
+            -80.0, 41.0, 0.0,
+        ]);
+        const cyanPolygon = csmViewerRef.current?.entities.add({
+            name: "Cyan vertical polygon with per-position heights and outline",
+            polygon: {
+                hierarchy: new Cesium.PolygonHierarchy(Cesium.Cartesian3.fromDegreesArrayHeights([
+                    -90.0, 41.0, 0.0,
+                    -80.0, 41.0, 0.0,
+                    -80.0, 41.0, 500000.0,
+
+                    -90.0, 41.0, 500000.0,
+
+                    // -85.0, 41.0, 500000.0,
+
+                ])),
+                perPositionHeight: true,
+                material: Cesium.Color.CYAN.withAlpha(0.5),
+                outline: true,
+                outlineColor: Cesium.Color.BLACK,
+            },
+        });
+
+        csmViewerRef.current?.flyTo(cyanPolygon);
     }
 
     useEffect(() => {

@@ -24,6 +24,7 @@ function Home() {
         {id: 10, name: '第10课', content: 'Lesson10,剖面'},
         {id: 11, name: '第11课', content: 'Lesson11,插值：平滑路径'},
         {id: 12, name: '第12课', content: 'Lesson12,粒子效果'},
+        {id: 13, name: '第13课', content: 'Lesson13,移动四边形，polygon'},
     ]
     const handleClick = (item) => {
         switch (item.id) {
@@ -63,12 +64,15 @@ function Home() {
             case 12:
                 navigate("/lesson12");
                 break;
+            case 13:
+                navigate("/lesson13");
+                break;
             default:
                 break;
         }
     }
     return (
-        <div>
+        <div className={'home'} >
             <h1>这是目录页面</h1>
             <ol>
                 {list.map(item => {
