@@ -79,7 +79,7 @@ function Lesson201() {
         csmViewerRef.current = new Cesium.Viewer("csm-viewer-container", {
             infoBox: false,
             terrainProvider: Cesium.createWorldTerrain(),
-            imageryProvider: singleTileImageryProvider,
+            // imageryProvider: singleTileImageryProvider,
         });
         viewer = csmViewerRef.current;
         defaultCameraPosition();
