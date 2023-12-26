@@ -25,6 +25,8 @@ function Home() {
         {id: 11, name: '第11课', content: 'Lesson11,插值：平滑路径'},
         {id: 12, name: '第12课', content: 'Lesson12,粒子效果'},
         {id: 13, name: '第13课', content: 'Lesson13,移动四边形，polygon'},
+        {id: 14, name: '第14课', content: 'Lesson14,材质设置,可移动'},
+        {id: 15, name: '第201课', content: 'Lesson201,Cesium影像服务--图册功能'},
     ]
     const handleClick = (item) => {
         switch (item.id) {
@@ -66,6 +68,12 @@ function Home() {
                 break;
             case 13:
                 navigate("/lesson13");
+                break;
+            case 14:
+                navigate("/lesson14");
+                break;
+            case 15:
+                navigate("/lesson201");
                 break;
             default:
                 break;

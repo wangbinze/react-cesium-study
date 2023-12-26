@@ -12,6 +12,8 @@ import Lesson10 from "../views/Lesson10";
 import Lesson11 from "../views/Lesson11";
 import Lesson12 from "../views/Lesson12";
 import Lesson13 from "../views/Lesson13";
+import Lesson14 from "../views/Lesson14";
+import Lesson201 from "../views/Lesson201";
 
 export default [
     {
@@ -69,5 +71,13 @@ export default [
     {
         path: '/lesson13',
         element: <Lesson13/>
+    },
+    {
+        path: '/lesson14',
+        element: <Lesson14/>
+    },
+    {
+        path: '/lesson201',
+        element: <Lesson201/>
     }
 ]
