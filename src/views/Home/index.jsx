@@ -26,7 +26,11 @@ function Home() {
         {id: 12, name: '第12课', content: 'Lesson12,粒子效果'},
         {id: 13, name: '第13课', content: 'Lesson13,移动四边形，polygon'},
         {id: 14, name: '第14课', content: 'Lesson14,材质设置,可移动'},
-        {id: 15, name: '第201课', content: 'Lesson201,Cesium影像服务--图册功能'},
+        {id: 201, name: '第201课', content: 'Lesson201,Cesium影像服务--图册功能'},
+        {id: 202, name: '第202课', content: 'Lesson202,Cesium影像服务--BaseLayerPicker使用,自定义数据源'},
+        {id: 203, name: '第203课', content: 'Lesson203,Cesium地形服务—在线地形'},
+        {id: 204, name: '第204课', content: 'Lesson204,Cesium鼠标事件'},
+
     ]
     const handleClick = (item) => {
         switch (item.id) {
@@ -72,15 +76,24 @@ function Home() {
             case 14:
                 navigate("/lesson14");
                 break;
-            case 15:
+            case 201:
                 navigate("/lesson201");
+                break;
+            case 202:
+                navigate("/lesson202");
+                break;
+            case 203:
+                navigate("/lesson203");
+                break;
+            case 204:
+                navigate("/lesson204");
                 break;
             default:
                 break;
         }
     }
     return (
-        <div className={'home'} >
+        <div className={'home'}>
             <h1>这是目录页面</h1>
             <ol>
                 {list.map(item => {
