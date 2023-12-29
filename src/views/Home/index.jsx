@@ -30,6 +30,7 @@ function Home() {
         {id: 202, name: '第202课', content: 'Lesson202,Cesium影像服务--BaseLayerPicker使用,自定义数据源'},
         {id: 203, name: '第203课', content: 'Lesson203,Cesium地形服务—在线地形'},
         {id: 204, name: '第204课', content: 'Lesson204,Cesium鼠标事件'},
+        {id: 205, name: '第205课', content: 'Lesson205,绘制对象-Entity方式'},
 
     ]
     const handleClick = (item) => {
@@ -87,6 +88,9 @@ function Home() {
                 break;
             case 204:
                 navigate("/lesson204");
+                break;
+            case 205:
+                navigate("/lesson205");
                 break;
             default:
                 break;
