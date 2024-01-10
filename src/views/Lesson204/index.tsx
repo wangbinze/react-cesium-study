@@ -103,6 +103,7 @@ function Lesson204() {
         }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
         // 3、LEFT_DOUBLE_CLICK
         handler.setInputAction(function (movement: any) {
+            console.log(106, movement)
             cartesian = viewer?.camera.pickEllipsoid(movement.position, ellipsoid);//movement.endPosition
             if (cartesian && viewer) {
                 //将笛卡尔坐标转换为地理坐标
@@ -145,6 +146,7 @@ function Lesson204() {
             },
         });
         viewer = csmViewerRef.current;
+        console.log(viewer)
         defaultCameraPosition();
         // 鼠标事件  相关的
         myMouseEvent();
