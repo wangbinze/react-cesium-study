@@ -35,6 +35,7 @@ import {
     TailedSquadCombat,
 } from "./graphicsDraw/arrowDraw";
 import emitter from '../mitt'
+import Cesium from "cesium";
 
 export default class PlotDraw {
     drawArr: PlotClass[];
@@ -92,7 +93,6 @@ export default class PlotDraw {
         this.drawArr = [];
         emitter.on("drawEnd", () => {
             this.drawArr.push(this.nowObj as PlotClass);
-            console.log(this.nowObj, 'this.nowObj--')
             this.drawArr[this.drawArr.length - 1]?.stopDraw();
             this.saveData();
             this.nowObj = null;
@@ -188,7 +188,6 @@ export default class PlotDraw {
                 break;
             case "doubleArrow":
                 this.nowObj = new DoubleArrow();
-                console.log(this.nowObj, 'this.nowObj')
                 this.nowObj.startDraw();
                 break;
             case "straightArrow":
@@ -227,6 +226,7 @@ export default class PlotDraw {
     saveData() {
         //保存用户数据
         const positions: PointArr = this.nowObj?.getLnglats() as PointArr;
+        // if (!this.nowObj) return
         this.jsonData[this.nowObj?.type.toLowerCase() + "Data"].push(positions);
         console.log("保存的数据：", this.jsonData);
     }
@@ -275,6 +275,7 @@ export default class PlotDraw {
         this.handler.setInputAction(function (evt: any) {
             const pick = window.Viewer.scene.pick(evt.position);
             if (defined(pick) && pick.id) {
+                console.log(pick)
                 for (let i = 0; i < $this.drawArr.length; i++) {
                     if (pick.id == $this.drawArr[i].objId) {
                         $this.nowObj = $this.drawArr[i];
@@ -300,6 +301,63 @@ export default class PlotDraw {
         for (let i = 0; i < this.drawArr.length; i++) {
             this.drawArr[i].disable();
         }
+    }
+
+    deleteOne() {
+        // 测试；直接删除第一个
+        console.log(this.jsonData, this.drawArr)
+        const _this = this;
+        let handler = new ScreenSpaceEventHandler(window.Viewer.scene.canvas);
+        handler.setInputAction(function (movement: any) {
+            let pick = window.Viewer.scene.pick(movement.position);
+            console.log(pick)
+            if (defined(pick) && pick.id) {
+                for (let i = 0; i < _this.drawArr.length; i++) {
+                    if (pick.id == _this.drawArr[i].objId) {
+                        let type = _this.drawArr[i].type;
+                        console.log(type)
+                        // 删除drawArr中的数据
+                        _this.drawArr.splice(i, 1);
+                        // 删除  未完成  需要删除jsonData的数据
+                        switch (type) {
+                            case "DoubleArrow":
+                                _this.nowObj = new DoubleArrow();
+                                console.log(_this.jsonData)
+                                // _this.nowObj.disable();
+                                // _this.drawArr[i].disable();
+                                break;
+                            case "straightArrow":
+                                break;
+                            case "fineArrow":
+                                break;
+                            case "assaultDirection":
+                                break;
+                            case "attackArrow":
+                                break;
+                            case "tailedAttackArrow":
+                                break;
+                            case "squadCombat":
+                                break;
+                            case "tailedSquadCombat":
+                                break;
+                            default:
+                                break;
+                        }
+                        break;
+                    }
+                }
+                /*console.log(pick)
+                for (let i = 0; i < _this.drawArr.length; i++) {
+                    console.log(pick.id, _this.drawArr[i].objId)
+                    if (pick.id == _this.drawArr[i].objId) {
+                        _this.disable();
+                        _this.drawArr.splice(i, 1);
+                        console.log(_this.drawArr, _this.jsonData)
+                        break;
+                    }
+                }*/
+            }
+        }, ScreenSpaceEventType.LEFT_CLICK);
     }
 }
 

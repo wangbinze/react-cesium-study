@@ -62,6 +62,7 @@ class BaseArrow implements BaseArrowI {
     }
 
     disable() {
+        console.log(this.arrowEntity, 'this.arrowEntity')
         if (this.arrowEntity) {
             window.Viewer.entities.remove(this.arrowEntity);
             window.Viewer.billboards.remove(this.floatPoint);
@@ -92,7 +93,6 @@ class BaseArrow implements BaseArrowI {
     }
 
     creatPoint(cartesian: number[]): Primitive {
-        console.log(90, cartesian)
         return window.Viewer.billboards.add({
             id: "moveBillboard",
             position: cartesian,
@@ -306,7 +306,7 @@ class DoubleArrow extends BaseArrow implements PlotFuncI {
             polygon: {
                 hierarchy: new CallbackProperty(update, false),
                 // 绘制过程中的颜色
-                material: Color.BLUE.withAlpha(0.5  ),
+                material: Color.BLUE.withAlpha(0.5),
                 heightReference: HeightReference.CLAMP_TO_GROUND,
             },
         });
@@ -331,7 +331,7 @@ class StraightArrow extends BaseArrow implements PlotFuncI {
             modifyHandler: null,
             pointList: [],
             material: Material.fromType("PolylineArrow", {
-                color: Color.PINK.clone(),
+                color: Color.RED.clone().withAlpha(0.5),
             }),
             selectPoint: null,
             clickStep: 0,
@@ -516,7 +516,7 @@ class FineArrow extends BaseArrow implements PlotFuncI {
             modifyHandler: null,
             pointList: [],
             material: Material.fromType("Color", {
-                color: Color.PINK.clone(),
+                color: Color.RED.clone().withAlpha(0.5),
             }),
             selectPoint: null,
             clickStep: 0,
@@ -688,7 +688,7 @@ class FineArrow extends BaseArrow implements PlotFuncI {
         return window.Viewer.entities.add({
             polygon: {
                 hierarchy: new CallbackProperty(update, false),
-                material: Color.BLUE,
+                material: Color.BLUE.withAlpha(0.5),
                 heightReference: HeightReference.CLAMP_TO_GROUND,
             },
         });
@@ -713,7 +713,7 @@ class AssaultDirection extends BaseArrow implements PlotFuncI {
             modifyHandler: null,
             pointList: [],
             material: Material.fromType("Color", {
-                color: Color.PINK.clone(),
+                color: Color.RED.clone().withAlpha(0.5),
             }),
             selectPoint: null,
             clickStep: 0,
@@ -885,7 +885,7 @@ class AssaultDirection extends BaseArrow implements PlotFuncI {
         return window.Viewer.entities.add({
             polygon: {
                 hierarchy: new CallbackProperty(update, false),
-                material: Color.BLUE,
+                material: Color.BLUE.withAlpha(0.5),
                 heightReference: HeightReference.CLAMP_TO_GROUND,
             },
         });
@@ -910,7 +910,7 @@ class AttackArrow extends BaseArrow implements PlotFuncI {
             modifyHandler: null,
             pointList: [],
             material: Material.fromType("Color", {
-                color: Color.PINK.clone(),
+                color: Color.RED.clone().withAlpha(0.5),
             }),
             selectPoint: null,
             clickStep: 0,
@@ -1092,7 +1092,7 @@ class AttackArrow extends BaseArrow implements PlotFuncI {
         return window.Viewer.entities.add({
             polygon: {
                 hierarchy: new CallbackProperty(update, false),
-                material: Color.BLUE,
+                material: Color.BLUE.withAlpha(0.5),
                 heightReference: HeightReference.CLAMP_TO_GROUND,
             },
         });
@@ -1117,7 +1117,7 @@ class TailedAttackArrow extends BaseArrow implements PlotFuncI {
             modifyHandler: null,
             pointList: [],
             material: Material.fromType("Color", {
-                color: Color.PINK.clone(),
+                color: Color.RED.clone().withAlpha(0.5),
             }),
             selectPoint: null,
             clickStep: 0,
@@ -1299,7 +1299,7 @@ class TailedAttackArrow extends BaseArrow implements PlotFuncI {
         return window.Viewer.entities.add({
             polygon: {
                 hierarchy: new CallbackProperty(update, false),
-                material: Color.BLUE,
+                material: Color.BLUE.withAlpha(0.5),
                 heightReference: HeightReference.CLAMP_TO_GROUND,
             },
         });
@@ -1324,7 +1324,7 @@ class SquadCombat extends BaseArrow implements PlotFuncI {
             modifyHandler: null,
             pointList: [],
             material: Material.fromType("Color", {
-                color: Color.PINK.clone(),
+                color: Color.RED.clone().withAlpha(0.5),
             }),
             selectPoint: null,
             clickStep: 0,
@@ -1506,7 +1506,7 @@ class SquadCombat extends BaseArrow implements PlotFuncI {
         return window.Viewer.entities.add({
             polygon: {
                 hierarchy: new CallbackProperty(update, false),
-                material: Color.BLUE,
+                material: Color.BLUE.withAlpha(0.5),
                 heightReference: HeightReference.CLAMP_TO_GROUND,
             },
         });
@@ -1531,7 +1531,7 @@ class TailedSquadCombat extends BaseArrow implements PlotFuncI {
             modifyHandler: null,
             pointList: [],
             material: Material.fromType("Color", {
-                color: Color.PINK.clone(),
+                color: Color.RED.clone().withAlpha(0.5),
             }),
             selectPoint: null,
             clickStep: 0,
@@ -1713,7 +1713,7 @@ class TailedSquadCombat extends BaseArrow implements PlotFuncI {
         return window.Viewer.entities.add({
             polygon: {
                 hierarchy: new CallbackProperty(update, false),
-                material: Color.BLUE,
+                material: Color.BLUE.withAlpha(0.5),
                 heightReference: HeightReference.CLAMP_TO_GROUND,
             },
         });

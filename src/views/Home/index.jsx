@@ -32,6 +32,8 @@ function Home() {
         {id: 204, name: '第204课', content: 'Lesson204,Cesium鼠标事件'},
         {id: 205, name: '第205课', content: 'Lesson205,绘制对象-Entity方式'},
         {id: 206, name: '第206课', content: 'Lesson206,'},
+        {id: 207, name: '第207课', content: 'Lesson207,水波'},
+        {id: 208, name: '第208课', content: 'Lesson208,地形开挖'}
     ]
     const handleClick = (item) => {
         switch (item.id) {
@@ -95,6 +97,12 @@ function Home() {
 
             case 206:
                 navigate("/lesson206");
+                break;
+            case 207:
+                navigate("/lesson207");
+                break;
+            case 208:
+                navigate("/lesson208");
                 break;
             default:
                 break;

@@ -2,6 +2,7 @@ import React, {useEffect, useRef, useState} from "react";
 import * as Cesium from "cesium";
 import "./index.css";
 import PlotDraw from "./plot";
+import emitter from "./mitt";
 
 // 态势标绘按钮类型
 const btnList = [
@@ -26,7 +27,7 @@ const btnList = [
         activeName: "attackArrow",
     },
     {
-        name: "进攻方向（尾）",
+        name: "进攻方向（燕尾）",
         activeName: "tailedAttackArrow",
     },
     {
@@ -50,20 +51,31 @@ const SituationPlotting = () => {
     //     }
     // }, [window.Viewer])
     const handleClick = (activeName) => {
-        draw = new PlotDraw();
+        if (activeName === "delete") {
+            handleDelete();
+            return
+        }
+        // 判断是否初始化，如果没有初始化，就初始化，只创建一个实例
+        if (!draw) {
+            draw = new PlotDraw();
+        }
         draw?.draw(activeName)
     }
     const handleDelete = () => {
-        /*let handler = new Cesium.ScreenSpaceEventHandler(window.Viewer.scene.canvas);
+       /* let handler = new Cesium.ScreenSpaceEventHandler(window.Viewer.scene.canvas);
         handler.setInputAction(function (movement: any) {
             let pick = window.Viewer.scene.pick(movement.position);
-            if (Cesium.defined(pick) && pick.id) {
+            console.log(pick)
+            /!*if (Cesium.defined(pick) && pick.id) {
                 console.log(pick.id, 'pick.id', window.Viewer.entities);
                 window.Viewer.entities.remove(pick.id);
                 handler.destroy();
-            }
-            console.log(draw)
+            }*!/
+            // console.log(draw, draw?.seletedOne())
+            // draw?.seletedOne();
         }, Cesium.ScreenSpaceEventType.LEFT_CLICK);*/
+        draw?.deleteOne();
+        // draw?.clearAll()
     }
     return (
         <div id={"situation-plotting"}>

@@ -26,6 +26,7 @@ import { getCatesian3FromPX, cartesianToLonlat } from "../../tools";
 import type { BaseAreaI, PlotFuncI, PointArr } from "./../../interface";
 import { areaPlot } from "./algorithm";
 import emitter from '../../../mitt'
+import PointImage from '../../../../../assets/icon/point.png'
 
 class BaseArea implements BaseAreaI {
   type: string;
@@ -98,7 +99,7 @@ class BaseArea implements BaseAreaI {
     return window.Viewer.billboards.add({
       id: "moveBillboard",
       position: cartesian,
-      image: "/src/assets/icon/point.png",
+      image: PointImage,
       verticalOrigin: VerticalOrigin.BOTTOM,
       heightReference: HeightReference.CLAMP_TO_GROUND,
     });

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c7304b2c-82e1-47d3-974e-fb5698e35cf3" name="更改" comment="11">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/earthspec1k.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/waterNormals.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/earthspec1k.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/waterNormals.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson207/PrimitiveWaterFace/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson207/global.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson207/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson207/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson208/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson208/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/react-cesium-study.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SituationPlotting/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SituationPlotting/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SituationPlotting/plot/graphicsDraw/areaDraw/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SituationPlotting/plot/graphicsDraw/areaDraw/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SituationPlotting/plot/graphicsDraw/arrowDraw/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SituationPlotting/plot/graphicsDraw/arrowDraw/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SituationPlotting/plot/graphicsDraw/lineDraw/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SituationPlotting/plot/graphicsDraw/lineDraw/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SituationPlotting/plot/graphicsDraw/pointDraw/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SituationPlotting/plot/graphicsDraw/pointDraw/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SituationPlotting/plot/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SituationPlotting/plot/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Lesson4/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Lesson4/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Lesson5/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Lesson5/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Lesson6/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Lesson6/index.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="TypeScript File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2Z9ZzAjFdGLNr37dBGVG1BWjmJ9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Project-Folder-my/react-cesium-study",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "inlay.hints",
+    "ts.external.directory.path": "D:\\Project-Folder-my\\react-cesium-study\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project-Folder-my\react-cesium-study\src\components" />
+      <recent name="D:\Project-Folder-my\react-cesium-study\src\views\Lesson208" />
+      <recent name="D:\Project-Folder-my\react-cesium-study\src\assets\images" />
+      <recent name="D:\Project-Folder-my\react-cesium-study\public\images" />
+      <recent name="D:\Project-Folder-my\react-cesium-study\src\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project-Folder-my\react-cesium-study\src\components\SituationPlotting\plot" />
+      <recent name="D:\Project-Folder-my\react-cesium-study\src\assets" />
+      <recent name="D:\Project-Folder-my\react-cesium-study\src\views\Lesson14" />
+      <recent name="D:\Project-Folder-my\react-cesium-study\public" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="c7304b2c-82e1-47d3-974e-fb5698e35cf3" name="更改" comment="" />
+      <created>1701836515969</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701836515969</updated>
+      <workItem from="1701836517001" duration="45344000" />
+      <workItem from="1702518971260" duration="12668000" />
+      <workItem from="1702861146474" duration="10171000" />
+      <workItem from="1702881326516" duration="34416000" />
+      <workItem from="1703467004353" duration="597000" />
+      <workItem from="1703492640820" duration="23155000" />
+      <workItem from="1703642202737" duration="34572000" />
+      <workItem from="1703820218733" duration="10031000" />
+      <workItem from="1704157160086" duration="33271000" />
+      <workItem from="1704790188330" duration="4372000" />
+      <workItem from="1704849198905" duration="222000" />
+      <workItem from="1704849436855" duration="11042000" />
+      <workItem from="1704867609316" duration="39991000" />
+      <workItem from="1705541133843" duration="3359000" />
+      <workItem from="1705628127769" duration="7269000" />
+      <workItem from="1706064648428" duration="2526000" />
+    </task>
+    <task id="LOCAL-00001" summary="第一次提交 创建了地球">
+      <option name="closed" value="true" />
+      <created>1701841069149</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701841069149</updated>
+    </task>
+    <task id="LOCAL-00002" summary="第一次提交">
+      <option name="closed" value="true" />
+      <created>1701855357711</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701855357711</updated>
+    </task>
+    <task id="LOCAL-00003" summary="lesson1">
+      <option name="closed" value="true" />
+      <created>1702027960379</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702027960379</updated>
+    </task>
+    <task id="LOCAL-00004" summary="lesson1">
+      <option name="closed" value="true" />
+      <created>1702028202792</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702028202792</updated>
+    </task>
+    <task id="LOCAL-00005" summary="lesson1">
+      <option name="closed" value="true" />
+      <created>1702029428357</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702029428357</updated>
+    </task>
+    <task id="LOCAL-00006" summary="lesson4">
+      <option name="closed" value="true" />
+      <created>1702288634051</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702288634051</updated>
+    </task>
+    <task id="LOCAL-00007" summary="lesson5">
+      <option name="closed" value="true" />
+      <created>1702375173241</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702375173241</updated>
+    </task>
+    <task id="LOCAL-00008" summary="xz">
+      <option name="closed" value="true" />
+      <created>1702893492351</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702893492351</updated>
+    </task>
+    <task id="LOCAL-00009" summary="11  完善">
+      <option name="closed" value="true" />
+      <created>1702952325833</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1702952325833</updated>
+    </task>
+    <task id="LOCAL-00010" summary="12">
+      <option name="closed" value="true" />
+      <created>1702979620023</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702979620023</updated>
+    </task>
+    <task id="LOCAL-00011" summary="13">
+      <option name="closed" value="true" />
+      <created>1703066274820</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1703066274820</updated>
+    </task>
+    <task id="LOCAL-00012" summary="301">
+      <option name="closed" value="true" />
+      <created>1703582654087</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1703582654087</updated>
+    </task>
+    <task id="LOCAL-00013" summary="201">
+      <option name="closed" value="true" />
+      <created>1703582830228</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1703582830228</updated>
+    </task>
+    <task id="LOCAL-00014" summary="202-204">
+      <option name="closed" value="true" />
+      <created>1703669230115</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1703669230115</updated>
+    </task>
+    <task id="LOCAL-00015" summary="204 鼠标事件">
+      <option name="closed" value="true" />
+      <created>1703757307850</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1703757307850</updated>
+    </task>
+    <task id="LOCAL-00016" summary="205">
+      <option name="closed" value="true" />
+      <created>1703840301797</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1703840301797</updated>
+    </task>
+    <task id="LOCAL-00017" summary="206">
+      <option name="closed" value="true" />
+      <created>1704867863500</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1704867863500</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/views/Lesson14/index.js" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="第一次提交 创建了地球" />
+    <MESSAGE value="第一次提交" />
+    <MESSAGE value="lesson1" />
+    <MESSAGE value="lesson4" />
+    <MESSAGE value="lesson5" />
+    <MESSAGE value="xz" />
+    <MESSAGE value="11  完善" />
+    <MESSAGE value="12" />
+    <MESSAGE value="13" />
+    <MESSAGE value="301" />
+    <MESSAGE value="201" />
+    <MESSAGE value="202-204" />
+    <MESSAGE value="204 鼠标事件" />
+    <MESSAGE value="205" />
+    <MESSAGE value="206" />
+    <MESSAGE value="11" />
+    <option name="LAST_COMMIT_MESSAGE" value="11" />
+  </component>
+</project>

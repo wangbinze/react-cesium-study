@@ -12,6 +12,7 @@ import {
 import type { PlotFuncI, PointArr, BasePointI } from "../../interface";
 import { getCatesian3FromPX, cartesianToLonlat } from "../../tools";
 import emitter from '../../../mitt'
+import PointImage from '../../../../../assets/icon/point.png'
 
 class BasePoint implements BasePointI {
     type: string;
@@ -137,7 +138,7 @@ class Marker extends BasePoint implements PlotFuncI {
     creatPoint(cartesian: PointArr) {
         return window.Viewer.billboards.add({
             position: cartesian,
-            image: "/src/assets/icon/point.png",
+            image: PointImage,
             verticalOrigin: VerticalOrigin.BOTTOM,
             heightReference: HeightReference.CLAMP_TO_GROUND,
         });

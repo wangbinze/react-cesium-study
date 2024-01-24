@@ -19,6 +19,7 @@ import {
 import { getCatesian3FromPX, cartesianToLonlat } from "../../tools";
 import type { BaseLineI, PlotFuncI, PointArr } from "./../../interface/index";
 import { linePlot } from "./algorithm";
+import PointImage from '../../../../../assets/icon/point.png'
 import emitter from '../../../mitt'
 
 class BaseLine implements BaseLineI {
@@ -86,7 +87,7 @@ class BaseLine implements BaseLineI {
     return window.Viewer.billboards.add({
       id: "moveBillboard",
       position: cartesian,
-      image: "/src/assets/icon/point.png",
+      image: PointImage,
       verticalOrigin: VerticalOrigin.BOTTOM,
       heightReference: HeightReference.CLAMP_TO_GROUND,
     });
