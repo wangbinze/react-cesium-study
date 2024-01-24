@@ -5,33 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7304b2c-82e1-47d3-974e-fb5698e35cf3" name="更改" comment="11">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/earthspec1k.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/waterNormals.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/earthspec1k.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/waterNormals.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Lesson207/PrimitiveWaterFace/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Lesson207/global.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Lesson207/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Lesson207/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Lesson208/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Lesson208/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/react-cesium-study.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SituationPlotting/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SituationPlotting/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SituationPlotting/plot/graphicsDraw/areaDraw/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SituationPlotting/plot/graphicsDraw/areaDraw/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SituationPlotting/plot/graphicsDraw/arrowDraw/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SituationPlotting/plot/graphicsDraw/arrowDraw/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SituationPlotting/plot/graphicsDraw/lineDraw/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SituationPlotting/plot/graphicsDraw/lineDraw/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SituationPlotting/plot/graphicsDraw/pointDraw/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SituationPlotting/plot/graphicsDraw/pointDraw/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SituationPlotting/plot/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SituationPlotting/plot/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Lesson4/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Lesson4/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Lesson5/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Lesson5/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Lesson6/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Lesson6/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Lesson208/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Lesson208/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,24 +39,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Project-Folder-my/react-cesium-study",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "inlay.hints",
-    "ts.external.directory.path": "D:\\Project-Folder-my\\react-cesium-study\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Project-Folder-my/react-cesium-study&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Project-Folder-my\\react-cesium-study\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Project-Folder-my\react-cesium-study\src\components" />
