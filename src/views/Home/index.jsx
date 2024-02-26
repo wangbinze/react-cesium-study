@@ -33,7 +33,8 @@ function Home() {
         {id: 205, name: '第205课', content: 'Lesson205,绘制对象-Entity方式'},
         {id: 206, name: '第206课', content: 'Lesson206,'},
         {id: 207, name: '第207课', content: 'Lesson207,水波'},
-        {id: 208, name: '第208课', content: 'Lesson208,地形开挖'}
+        {id: 208, name: '第208课', content: 'Lesson208,地形开挖'},
+        {id: 209, name: '第209课', content: 'Lesson209,threejs'},
     ]
     const handleClick = (item) => {
         switch (item.id) {
@@ -103,6 +104,9 @@ function Home() {
                 break;
             case 208:
                 navigate("/lesson208");
+                break;
+            case 209:
+                navigate("/lesson209");
                 break;
             default:
                 break;

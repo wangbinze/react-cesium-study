@@ -21,6 +21,7 @@ import Lesson205 from "../views/Lesson205";
 import Lesson206 from "../views/Lesson206";
 import Lesson207 from "../views/Lesson207";
 import Lesson208 from "../views/Lesson208";
+import Lesson209 from "../views/Lesson209";
 
 export default [
     {
@@ -114,5 +115,9 @@ export default [
     {
         path: '/lesson208',
         element: <Lesson208/>
+    },
+    {
+        path: '/lesson209',
+        element: <Lesson209/>
     }
 ]

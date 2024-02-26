@@ -114,7 +114,6 @@ function Lesson2() {
         };
     }, [viewerContainerRef]);
 
-
     return (
         <div
             className="csm-viewer-container"
