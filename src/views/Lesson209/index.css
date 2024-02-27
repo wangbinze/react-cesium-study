@@ -4,3 +4,8 @@
     top: 20px;
     z-index: 2;
 }
+#ThreeContainer canvas {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+}

@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7304b2c-82e1-47d3-974e-fb5698e35cf3" name="更改" comment="11">
-      <change afterPath="$PROJECT_DIR$/src/views/Lesson209/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Lesson209/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Lesson2/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Lesson2/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Lesson208/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Lesson208/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Lesson209/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Lesson209/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Lesson209/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Lesson209/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +101,7 @@
       <workItem from="1706749679954" duration="47000" />
       <workItem from="1706749735929" duration="5219000" />
       <workItem from="1708217983307" duration="2174000" />
-      <workItem from="1708312315272" duration="22260000" />
+      <workItem from="1708312315272" duration="49025000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交 创建了地球">
       <option name="closed" value="true" />
@@ -253,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706089238442</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="11">
+      <option name="closed" value="true" />
+      <created>1708948359738</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1708948359738</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
