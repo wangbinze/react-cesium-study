@@ -35,6 +35,9 @@ function Home() {
         {id: 207, name: '第207课', content: 'Lesson207,水波'},
         {id: 208, name: '第208课', content: 'Lesson208,地形开挖'},
         {id: 209, name: '第209课', content: 'Lesson209,threejs'},
+        {id: 210, name: '第210课', content: 'Lesson210,threejs-水'},
+        {id: 211, name: '第211课', content: 'Lesson210,threejs-水2'},
+
     ]
     const handleClick = (item) => {
         switch (item.id) {
@@ -107,6 +110,12 @@ function Home() {
                 break;
             case 209:
                 navigate("/lesson209");
+                break;
+            case 210:
+                navigate("/lesson210");
+                break;
+            case 211:
+                navigate("/lesson211");
                 break;
             default:
                 break;

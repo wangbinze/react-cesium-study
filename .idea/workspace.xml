@@ -5,9 +5,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7304b2c-82e1-47d3-974e-fb5698e35cf3" name="更改" comment="11">
+      <change afterPath="$PROJECT_DIR$/public/models/123.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/models/WhiteShark.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/models/gudingyi2.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/models/gudingyiD.glb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/models/gudingyid1.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/models/plant.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/models/rock.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/models/rockRed.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/models/uuv.glb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/models/uuv.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/models/uuv1.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/models/uv_grid_opengl.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/TropicalSunnyDay_nx.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/TropicalSunnyDay_ny.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/TropicalSunnyDay_nz.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/TropicalSunnyDay_px.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/TropicalSunnyDay_py.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/TropicalSunnyDay_pz.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/water.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/model/WhiteShark.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/model/plant.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/model/rock.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson209/index——copy.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson210/ThreeComponents.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson210/WhiteShark.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson210/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson210/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson210/index_copy.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson210/shaders/caustics/water_fragment.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson210/shaders/caustics/water_vertex.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson210/shaders/debug/fragment.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson210/shaders/debug/vertex.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson210/shaders/environment/fragment.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson210/shaders/environment/vertex.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson210/shaders/environment_mapping/fragment.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson210/shaders/environment_mapping/vertex.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson210/shaders/simulation/drop_fragment.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson210/shaders/simulation/update_fragment.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson210/shaders/simulation/vertex.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson210/shaders/water/fragment.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson210/shaders/water/vertex.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson211/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Lesson211/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Lesson209/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Lesson209/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Lesson206/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Lesson206/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Lesson209/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Lesson209/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/earthspec1k.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/primitiveWaterFace.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/waterNormals.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +96,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Project-Folder-my/react-cesium-study/src/views",
+    "last_opened_file_path": "D:/Project-Folder-my/react-cesium-study/public/models",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -60,13 +110,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Project-Folder-my\react-cesium-study\src\views" />
-      <recent name="D:\Project-Folder-my\react-cesium-study\src\components" />
-      <recent name="D:\Project-Folder-my\react-cesium-study\src\views\Lesson208" />
+      <recent name="D:\Project-Folder-my\react-cesium-study\public\models" />
+      <recent name="D:\Project-Folder-my\react-cesium-study\src\views\Lesson210" />
+      <recent name="D:\Project-Folder-my\react-cesium-study\src\assets\model" />
       <recent name="D:\Project-Folder-my\react-cesium-study\src\assets\images" />
-      <recent name="D:\Project-Folder-my\react-cesium-study\public\images" />
+      <recent name="D:\Project-Folder-my\react-cesium-study\src\views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project-Folder-my\react-cesium-study\src\assets\model" />
       <recent name="D:\Project-Folder-my\react-cesium-study\src\components\SituationPlotting\plot" />
       <recent name="D:\Project-Folder-my\react-cesium-study\src\assets" />
       <recent name="D:\Project-Folder-my\react-cesium-study\src\views\Lesson14" />
@@ -101,7 +152,9 @@
       <workItem from="1706749679954" duration="47000" />
       <workItem from="1706749735929" duration="5219000" />
       <workItem from="1708217983307" duration="2174000" />
-      <workItem from="1708312315272" duration="49025000" />
+      <workItem from="1708312315272" duration="50938000" />
+      <workItem from="1709082415073" duration="17038000" />
+      <workItem from="1709514197328" duration="82679000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交 创建了地球">
       <option name="closed" value="true" />
@@ -255,7 +308,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708948359738</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="11">
+      <option name="closed" value="true" />
+      <created>1709038089572</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1709038089572</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

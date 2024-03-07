@@ -62,6 +62,7 @@ function Lesson206() {
         window.Viewer.scene.camera.frustum.near = 1.0;
         // window.Viewer.scene.camera.frustum.far = 10000.0;
         // 退出当前页面时，销毁，这个操作导致了viewer 异常了
+        defaultCameraPosition();
         return () => {
             if (viewer) {
                 viewer.destroy();

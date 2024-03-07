@@ -18,10 +18,16 @@ function create3DObject(): _3DObject {
     };
 }
 
+interface ThreeObject {
+    threeMesh: THREE.Group | null;
+    minWGS84: [number, number] | null;
+    maxWGS84: [number, number] | null;
+}
+
 function Lesson209() {
     let viewer: Cesium.Viewer | null = null;
     const [cesiumContainer, setCesiumContainer] = useState<HTMLElement | null>(null);
-    const [waterContainer, setWaterContainer] = useState<HTMLElement | null>(null);
+    const [threeContainer, setThreeContainer] = useState<HTMLElement | null>(null);
     const _3Dobjects = useRef<_3DObject[]>([]);
     let minWGS84: number[] | null = [115.23, 39.55];
     let maxWGS84: number[] | null = [116.23, 41.55];
@@ -31,21 +37,41 @@ function Lesson209() {
         scene: new THREE.Scene()
     });
 
+    // 默认视角
+    const defaultCameraPosition = () => {
+        if (!viewer) {
+            return;
+        }
+        // 直接设置视角位置
+        // 中国的坐标
+        const chinaPosition = {
+            longitude: 116.395645038,
+            latitude: 39.9299857781,
+            height: 7000000,
+        };
+        viewer.camera.setView({
+            destination: Cesium.Cartesian3.fromDegrees(chinaPosition.longitude, chinaPosition.latitude, chinaPosition.height),
+        });
+        // 禁用地下模式
+        // viewer.scene.underground = false;
+        // 禁用碰撞检测
+        viewer.scene.screenSpaceCameraController.enableCollisionDetection = true;
+    }
     /**
-     * 获取dom节点，cesium-dom 和 three-dom
+     *
      */
     useEffect(() => {
         // boundaries in WGS84 to help with syncing the renderers
         const currentCesiumContainer = document.getElementById("cesiumContainer");
         setCesiumContainer(currentCesiumContainer)
-        const currentWaterContainer = document.getElementById("waterContainer");
-        setWaterContainer(currentWaterContainer)
+        const currentThreeContainer = document.getElementById("ThreeContainer");
+        setThreeContainer(currentThreeContainer)
     }, [])
-
     useEffect(() => {
         initCesium();
-        // initThree();
+        initThree();
         init3DObject();
+
         loop();
         return () => {
             if (viewer) {
@@ -53,11 +79,8 @@ function Lesson209() {
                 viewer = null;
             }
         }
-    }, [cesiumContainer])
+    }, [cesiumContainer, threeContainer])
 
-    /**
-     * 加载cesium地球，并设置默认第一视角
-     */
     const initCesium = () => {
         Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIzZmRjY2ZkNC00M2I5LTQwMDktODA0ZS01NmY5ODBkYmUzOGMiLCJpZCI6NjM0OCwiaWF0IjoxNzAxODI3ODI3fQ.ukQm5Q1hF9UFwOJNnw_R6otKl7tQbwX13EkE2hSEEZI";
         viewer = new Cesium.Viewer('cesiumContainer', {
@@ -79,36 +102,52 @@ function Lesson209() {
             projectionPicker: false, // *   透视投影和正投影之间切换
             requestRenderMode: true, // * 在指定情况下进行渲染,提高性能
         })
-        defaultCameraPosition();
-    }
-    // 默认视角
-    const defaultCameraPosition = () => {
-        if (!viewer) {
-            return;
-        }
-        // 直接设置视角位置
-        // 中国的坐标
-        const chinaPosition = {
-            longitude: 116.395645038,
-            latitude: 39.9299857781,
-            height: 7000000,
-        };
-        viewer.camera.setView({
-            destination: Cesium.Cartesian3.fromDegrees(chinaPosition.longitude, chinaPosition.latitude, chinaPosition.height),
-        });
-        // 禁用地下模式
-        // viewer.scene.underground = false;
-        // 禁用碰撞检测
-        viewer.scene.screenSpaceCameraController.enableCollisionDetection = true;
-    }
 
+        // const center = Cesium.Cartesian3.fromDegrees(
+        //     (minWGS84[0] + maxWGS84[0]) / 2,
+        //     ((minWGS84[1] + maxWGS84[1]) / 2) - 1,
+        //     200000
+        // )
+        // viewer.camera.flyTo({
+        //     destination: center,
+        //     orientation: {
+        //         heading: Cesium.Math.toRadians(0),
+        //         pitch: Cesium.Math.toRadians(-60),
+        //         roll: Cesium.Math.toRadians(0)
+        //     },
+        //     duration: 3
+        // });
+        defaultCameraPosition();
+        console.log('加载了吗')
+    }
+    const initThree = () => {
+        const fov = 45;
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+        const aspect = width / height;
+        const near = 1;
+        const far = 10 * 1000 * 1000;
+
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
+        const renderer = new THREE.WebGLRenderer({alpha: true});
+        setThree({renderer, camera, scene});
+    }
+    useEffect(() => {
+        threeContainer?.appendChild(three.renderer.domElement);
+    }, [three, threeContainer])
+    useEffect(() => {
+    }, [threeContainer])
     const init3DObject = () => {
         if (!viewer) return;
         // Cesium 实体
         addPolygonEntity(viewer, minWGS84, maxWGS84);
         addBoxEntity(viewer);
         // Three 实体
-        // addBoxGeometry();
+        addBoxGeometry();
+        // Three
+
+
     }
     const addPolygonEntity = (viewer: Cesium.Viewer, minWGS84: number[] | null, maxWGS84: number[] | null) => {
         if (!minWGS84 || !maxWGS84) return
@@ -274,7 +313,7 @@ function Lesson209() {
     const loop = () => {
         requestAnimationFrame(loop);
         renderCesium();
-        // renderThreeObj(viewer);
+        renderThreeObj(viewer);
     }
     return (
         <div>
@@ -283,7 +322,7 @@ function Lesson209() {
                 style={{height: '100vh'}}
             >
             </div>
-            <div id="waterContainer"></div>
+            <div id="ThreeContainer"></div>
         </div>
     )
 }
